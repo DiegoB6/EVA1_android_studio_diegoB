@@ -1,0 +1,181 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/cian"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/indigo"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mi_salud"
+            android:textSize="40sp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+             />
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:translationZ="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        tools:srcCompat="@drawable/medic" />
+
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/monitorea_tu_salud"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="500dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/extended_fab"
+        android:layout_width="312dp"
+        android:layout_height="54dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="@color/indigo"
+        android:elevation="4dp"
+        android:text="@string/latidos_por_minuto"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:icon="@drawable/rate"
+        app:layout_constraintBottom_toTopOf="@+id/outlinedButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/extended_fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="@color/indigo"
+        android:elevation="4dp"
+        android:text="@string/porcentaje_de_oxigeno_en_la_sangre"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:icon="@drawable/oxigeno"
+        app:layout_constraintBottom_toTopOf="@+id/outlinedButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2"
+        app:layout_constraintVertical_bias="0.645"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/extended_fab3"
+        android:layout_width="105dp"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/indigo"
+        android:elevation="4dp"
+        android:text="@string/_80"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:icon="@drawable/circuloverde"
+        app:iconTint="@color/green"
+        app:layout_constraintBottom_toTopOf="@+id/extended_fab2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extended_fab"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp"
+        android:layout_marginEnd="245dp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/extended_fab4"
+        android:layout_width="105dp"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/indigo"
+        android:elevation="4dp"
+        android:text="@string/_95"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:icon="@drawable/circuloverde"
+        app:layout_constraintBottom_toTopOf="@+id/outlinedButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extended_fab2"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp"
+        android:layout_marginEnd="245dp"
+        android:layout_marginBottom="45dp"
+        app:iconTint="@color/green"
+        />
+
+
+    <Button
+        android:id="@+id/outlinedButton2"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="@color/indigo"
+        android:paddingHorizontal="100dp"
+        android:text="@string/volver"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2"
+        app:strokeColor="@color/red"
+        app:strokeWidth="3dp"
+        android:layout_marginTop="350dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu"
+        android:translationZ="5dp"
+        android:layout_marginStart="270dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

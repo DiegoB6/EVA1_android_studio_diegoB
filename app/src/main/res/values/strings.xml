@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">aplicacion salud</string>
+    <string name="mi_salud">Mi Salud</string>
+    <string name="monitorea_tu_salud">Monitorea tu Salud</string>
+    <string name="latidos_por_minuto">Latidos por minuto</string>
+    <string name="porcentaje_de_oxigeno_en_la_sangre">Porcentaje de oxigeno en la sangre</string>
+    <string name="_80">80</string>
+    <string name="_95">95%</string>
+    <string name="volver">Volver</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="salir">Salir</string>
+</resources>
